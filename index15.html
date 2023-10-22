@@ -16,7 +16,20 @@
 		color:white;
 		padding-bottom:10px;
 	}
+	#image-map {
+		align-items: center;
+		margin-left: 15rem;
+	}
+
+
 	</style>
+
+	<script>
+		function imageMap() {
+			alert("you clicked!");
+		}
+	</script>
+
 </head> 
 
 <body>
@@ -31,8 +44,8 @@
 			<source src="video.mkv" type="">
 		</video> -->
 
-		<div class="emojies">
-			&#128508; &nbsp; &#128512;
+		<div class="emojis">
+			&#128508; &nbsp; &#128512; 
 		</div>
 
 		<!-- <embed src="pdfFile.pdf" type="application/pdf" width="1000" height="500">
@@ -49,6 +62,28 @@
 		</iframe>
 
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28021.525449319885!2d77.21234820059513!3d28.60905489981073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2db961be393%3A0xf6c7ef5ee6dd10ae!2sIndia%20Gate%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1697394211918!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+		<div id="image-map">
+			<img src="workplace.avif" alt="workplace image" usemap="#workplace">
+
+			<map name="workplace"> 
+				<area onclick="imageMap()" target="_blank" shape="rect" coords="61, 106, 319, 171" alt="note books" href="https://www.amazon.in/Classmate-Premium-Subject-Notebook-Single/dp/B00LZLPYHW/ref=sr_1_9?crid=25LJ3S4268JMW&keywords=notebooks%2Bfor%2Bstudents&qid=1697423363&sprefix=natebook%2Caps%2C281&sr=8-9&th=1">
+			    <area target="_self" shape="circle" coords="104, 59, 45" href="https://www.amazon.in/s?k=googles&crid=2BUZ2C8G0N4MO&sprefix=google%2Caps%2C285&ref=nb_sb_noss_1" alt="goggles images">
+				<!-- <area shape="circle" coords="" href="" alt=""> -->
+				<area target="_parent" shape="poly" coords="218,210 226,222 259,207 322,183 317,174 269,192 " href="https://www.amazon.in/s?k=pen&crid=2Q9OMCT00FR6I&sprefix=pen%2Caps%2C487&ref=nb_sb_noss_1" alt="pen images">
+			</map>
+		</div>
+
+		<form id="image-map" enctype="multipart/form-data">
+			color <input type="color" disabled>
+			date <input type="date" readonly>
+			email <input type="email">
+			File <input type="file">
+			<input type="button" value="submit">
+			<button type="submit">Button</button>
+		</form>
+
+		<textarea name="area" id="area" cols="5" rows="2"> hello </textarea>
+	
 	</div>
 </body>
 </html>				 
